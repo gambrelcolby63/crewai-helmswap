@@ -1,0 +1,24 @@
+[project]
+name = "crewai-helmswap"
+version = "0.1.0"
+description = "CrewAI tools for HelmSwap: quote and build unsigned swap transactions. The agent's wallet signs and sends. Never holds keys."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Summit Private Credit LLC" }]
+keywords = ["helmswap", "crewai", "swap", "non-custodial"]
+dependencies = ["crewai>=0.76"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://helmswap.com/developers"
+Repository = "https://github.com/gambrelcolby63/crewai-helmswap"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["crewai_helmswap*"]
