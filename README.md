@@ -2,9 +2,7 @@
 
 CrewAI tools for [HelmSwap](https://helmswap.com/developers). They quote a swap and return an **unsigned** transaction. The agent's own wallet signs and sends it. The tools never hold private keys.
 
-Do not publish or run `crewai tool publish` until helmswap.com is back up and Colby has approved the submit.
-
-## Usage (after publish)
+## Usage
 
 ```python
 from crewai_helmswap import HelmswapQuoteTool, HelmswapBuildTool
